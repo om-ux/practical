@@ -1,0 +1,31 @@
+num = int(input("Enter a number:"))
+b = num%2
+if b>0:
+    print("This is an odd number.")
+else:
+    print("This is an even number.")
+
+
+Sub1=int(input("Enter marks for Sub1="))
+Sub2=int(input("Enter marks for Sub2="))
+Sub3=int(input("Enter marks for Sub3="))
+total = Sub1+Sub2+Sub3
+a = total/300
+p = a*100
+print("Total marks=",total)
+print("Percentage=",p,"%")
+if total>300 and p>100:
+    print("Invalid Input")
+else:
+    print("Total marks=",total)
+    print("Percentage=",p,"%")
+if p>=90 and p<=100:
+    print("Grade = A")
+elif p>=80 and p<=89:
+    print("Grade = B")
+elif p>=70 and p<=79:
+    print("Grade = C")
+elif p>=60 and p<=69:
+    print("Grade = D")
+elif p<=60:
+    print("Grade = F")
